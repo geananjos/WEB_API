@@ -1,0 +1,5 @@
+D:\_Dev\OdontoSys\OdontoSys\OdontoSys.Infrastructure\bin\Debug\netcoreapp3.1\OdontoSys.Infrastructure.deps.json
+D:\_Dev\OdontoSys\OdontoSys\OdontoSys.Infrastructure\bin\Debug\netcoreapp3.1\OdontoSys.Infrastructure.dll
+D:\_Dev\OdontoSys\OdontoSys\OdontoSys.Infrastructure\obj\Debug\netcoreapp3.1\OdontoSys.Infrastructure.csprojAssemblyReference.cache
+D:\_Dev\OdontoSys\OdontoSys\OdontoSys.Infrastructure\obj\Debug\netcoreapp3.1\OdontoSys.Infrastructure.AssemblyInfoInputs.cache
+D:\_Dev\OdontoSys\OdontoSys\OdontoSys.Infrastructure\obj\Debug\netcoreapp3.1\OdontoSys.Infrastructure.AssemblyInfo.cs
