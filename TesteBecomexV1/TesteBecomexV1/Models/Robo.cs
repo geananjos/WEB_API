@@ -4,6 +4,10 @@ namespace TesteBecomexV1.Models
 {
     public class Robo : IRobo
     {
+        public Robo()
+        {
+        }
+
         public Robo(ICabecaRobo cabeca, IBracoRobo bracoEsquerdo, IBracoRobo bracoDireito)
         {
             Cabeca = cabeca;
