@@ -15,6 +15,12 @@ namespace TesteBecomexV1.Models
             FortementeContraido = 4
         }
 
+        public enum LadoBraco
+        {
+            Esquerdo = 1,
+            Direito = 2
+        }
+
         public enum InclinacaoCabeca
         {
             ParaCima = 1,

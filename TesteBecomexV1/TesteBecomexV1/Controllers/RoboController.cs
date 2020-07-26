@@ -31,7 +31,7 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.PermitirRepousarBraco(_robo, 1))
+                if (_regraRobo.PermitirRepousarBraco(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
                     var movimento = (byte)EnumsRobo.Estados.EmRepouso;
                     _robo.BracoEsquerdo.Cotovelo.Estado = movimento;
@@ -54,7 +54,7 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.PermitirContrairLevementeCotovelo(_robo, 1))
+                if (_regraRobo.PermitirContrairLevementeCotovelo(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
                     var movimento = (byte)EnumsRobo.Estados.LevementeContraido;
                     _robo.BracoEsquerdo.Cotovelo.Estado = movimento;
@@ -77,7 +77,7 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.PermitirContrairCotovelo(_robo, 1))
+                if (_regraRobo.PermitirContrairCotovelo(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
                     var movimento = (byte)EnumsRobo.Estados.Contraido;
                     _robo.BracoEsquerdo.Cotovelo.Estado = movimento;
@@ -100,7 +100,7 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.PermitirContrairFortementeCotovelo(_robo, 1))
+                if (_regraRobo.PermitirContrairFortementeCotovelo(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
                     var movimento = (byte)EnumsRobo.Estados.FortementeContraido;
                     _robo.BracoEsquerdo.Cotovelo.Estado = movimento;
@@ -123,9 +123,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 1))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, -90, 1);
+                    _regraRobo.RotacionarPulsoRobo(_robo, -90, (byte)EnumsRobo.LadoBraco.Esquerdo);
                     return Ok("Pulso rotacionado em -90º!");
                 }
                 else
@@ -145,9 +145,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 1))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, -45, 1);
+                    _regraRobo.RotacionarPulsoRobo(_robo, -45, (byte)EnumsRobo.LadoBraco.Esquerdo);
                     return Ok("Pulso rotacionado em -45º!");
                 }
                 else
@@ -167,9 +167,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 1))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, 45, 1);
+                    _regraRobo.RotacionarPulsoRobo(_robo, 45, (byte)EnumsRobo.LadoBraco.Esquerdo);
                     return Ok("Pulso rotacionado em 45º!");
                 }
                 else
@@ -189,9 +189,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 1))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, 90, 1);
+                    _regraRobo.RotacionarPulsoRobo(_robo, 90, (byte)EnumsRobo.LadoBraco.Esquerdo);
                     return Ok("Pulso rotacionado em 90º!");
                 }
                 else
@@ -211,9 +211,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 1))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, 135, 1);
+                    _regraRobo.RotacionarPulsoRobo(_robo, 135, (byte)EnumsRobo.LadoBraco.Esquerdo);
                     return Ok("Pulso rotacionado em 135º!");
                 }
                 else
@@ -233,9 +233,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 1))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Esquerdo))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, 180, 1);
+                    _regraRobo.RotacionarPulsoRobo(_robo, 180, (byte)EnumsRobo.LadoBraco.Esquerdo);
                     return Ok("Pulso rotacionado em 180º!");
                 }
                 else
@@ -259,7 +259,7 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.PermitirRepousarBraco(_robo, 2))
+                if (_regraRobo.PermitirRepousarBraco(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
                     var movimento = (byte)EnumsRobo.Estados.EmRepouso;
                     _robo.BracoDireito.Cotovelo.Estado = movimento;
@@ -282,7 +282,7 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.PermitirContrairLevementeCotovelo(_robo, 2))
+                if (_regraRobo.PermitirContrairLevementeCotovelo(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
                     var movimento = (byte)EnumsRobo.Estados.LevementeContraido;
                     _robo.BracoDireito.Cotovelo.Estado = movimento;
@@ -305,7 +305,7 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.PermitirContrairCotovelo(_robo, 2))
+                if (_regraRobo.PermitirContrairCotovelo(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
                     var movimento = (byte)EnumsRobo.Estados.Contraido;
                     _robo.BracoDireito.Cotovelo.Estado = movimento;
@@ -328,7 +328,7 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.PermitirContrairFortementeCotovelo(_robo, 2))
+                if (_regraRobo.PermitirContrairFortementeCotovelo(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
                     var movimento = (byte)EnumsRobo.Estados.FortementeContraido;
                     _robo.BracoDireito.Cotovelo.Estado = movimento;
@@ -351,9 +351,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 2))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, -90, 2);
+                    _regraRobo.RotacionarPulsoRobo(_robo, -90, (byte)EnumsRobo.LadoBraco.Direito);
                     return Ok("Pulso rotacionado em -90º!");
                 }
                 else
@@ -373,9 +373,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 2))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, -45, 2);
+                    _regraRobo.RotacionarPulsoRobo(_robo, -45, (byte)EnumsRobo.LadoBraco.Direito);
                     return Ok("Pulso rotacionado em -45º!");
                 }
                 else
@@ -395,9 +395,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 2))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, 45, 2);
+                    _regraRobo.RotacionarPulsoRobo(_robo, 45, (byte)EnumsRobo.LadoBraco.Direito);
                     return Ok("Pulso rotacionado em 45º!");
                 }
                 else
@@ -417,9 +417,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 2))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, 90, 2);
+                    _regraRobo.RotacionarPulsoRobo(_robo, 90, (byte)EnumsRobo.LadoBraco.Direito);
                     return Ok("Pulso rotacionado em 90º!");
                 }
                 else
@@ -439,9 +439,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 2))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, 135, 2);
+                    _regraRobo.RotacionarPulsoRobo(_robo, 135, (byte)EnumsRobo.LadoBraco.Direito);
                     return Ok("Pulso rotacionado em 135º!");
                 }
                 else
@@ -461,9 +461,9 @@ namespace TesteBecomexV1.Controllers
         {
             try
             {
-                if (_regraRobo.VericarBracoFortementeContraido(_robo, 2))
+                if (_regraRobo.VericarBracoFortementeContraido(_robo, (byte)EnumsRobo.LadoBraco.Direito))
                 {
-                    _regraRobo.RotacionarPulsoRobo(_robo, 180, 2);
+                    _regraRobo.RotacionarPulsoRobo(_robo, 180, (byte)EnumsRobo.LadoBraco.Direito);
                     return Ok("Pulso rotacionado em 180º!");
                 }
                 else
