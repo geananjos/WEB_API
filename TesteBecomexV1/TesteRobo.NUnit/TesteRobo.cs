@@ -21,10 +21,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.FortementeContraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.VericarBracoFortementeContraido(robo, ladoBraco);
+            bool resultado = regrasRobo.VericarBracoFortementeContraido(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -42,10 +41,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.FortementeContraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.VericarBracoFortementeContraido(robo, ladoBraco);
+            bool resultado = regrasRobo.VericarBracoFortementeContraido(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -63,10 +61,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.LevementeContraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.PermitirRepousarBraco(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirRepousarBraco(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -84,10 +81,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.LevementeContraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.PermitirRepousarBraco(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirRepousarBraco(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -105,10 +101,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairLevementeCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairLevementeCotovelo(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -126,10 +121,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairLevementeCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairLevementeCotovelo(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -147,10 +141,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.LevementeContraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairCotovelo(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -168,10 +161,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.LevementeContraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairCotovelo(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -189,10 +181,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairFortementeCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairFortementeCotovelo(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -210,10 +201,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairFortementeCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairFortementeCotovelo(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsTrue(resultado);
@@ -235,10 +225,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.VericarBracoFortementeContraido(robo, ladoBraco);
+            bool resultado = regrasRobo.VericarBracoFortementeContraido(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -256,10 +245,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.VericarBracoFortementeContraido(robo, ladoBraco);
+            bool resultado = regrasRobo.VericarBracoFortementeContraido(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -277,10 +265,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.PermitirRepousarBraco(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirRepousarBraco(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -298,10 +285,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.PermitirRepousarBraco(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirRepousarBraco(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -319,10 +305,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.FortementeContraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairLevementeCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairLevementeCotovelo(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -340,10 +325,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.FortementeContraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairLevementeCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairLevementeCotovelo(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -361,10 +345,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairCotovelo(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -382,10 +365,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.Contraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairCotovelo(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -403,10 +385,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoEsquerdo.Cotovelo.Estado = (byte)EnumsRobo.Estados.FortementeContraido;
-            byte ladoBraco = 1; //Braço esquerdo
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairFortementeCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairFortementeCotovelo(robo, (byte)EnumsRobo.LadoBraco.Esquerdo);
 
             //Assert
             Assert.IsFalse(resultado);
@@ -424,10 +405,9 @@ namespace TesteRobo.NUnit
             RegrasRobo regrasRobo = new RegrasRobo();
 
             robo.BracoDireito.Cotovelo.Estado = (byte)EnumsRobo.Estados.FortementeContraido;
-            byte ladoBraco = 2; //Braço direito
 
             //Act
-            bool resultado = regrasRobo.PermitirContrairFortementeCotovelo(robo, ladoBraco);
+            bool resultado = regrasRobo.PermitirContrairFortementeCotovelo(robo, (byte)EnumsRobo.LadoBraco.Direito);
 
             //Assert
             Assert.IsFalse(resultado);
